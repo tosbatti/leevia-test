@@ -1,0 +1,13 @@
+<div class="row">
+	<p class="title title-players text-center">PARTECIPANTI</p>
+	<p class="subtitle subtitle-players text-center">
+		La top 10 dei partecipanti, <br class="visible-xs-inline">sei tra di loro?
+	</p>
+</div>
+<div class="row players text-center"" ng-controller="players" >
+	<div class="player" ng-repeat="follower in followers">
+		<span class="player-index text-right">{{$index + 1}}</span>
+		<a ng-href="{{follower.html_url}}" target="_blank"><img ng-src="{{follower.avatar_url}}" class="avatar"></a>
+		<span class="player-name text-capitalize text-left">{{follower.name | lowercase}}</span>
+	</div>
+</div>

@@ -1,0 +1,328 @@
+@media (min-width: 1200px) {
+    .container{
+        max-width: 970px;
+    }
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #001e38;
+}
+
+html, body {
+    height: 100%;
+}
+
+.background {
+    position: absolute;
+    z-index: -1;
+}
+
+.background img {
+    width: 100%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0 75%);
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0 75%);
+}
+
+.background .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(255, 207, 105, 0.5) 15%,rgba(0, 30, 56, 0.5) 50%);
+    z-index: 1;
+}
+
+.leevia-logo {
+    width: 150px;
+}
+
+.leevia-navbar .navbar-brand {
+    line-height: 70px;
+    height: 70px;
+}
+
+.leevia-navbar .navbar-nav > li > a {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    line-height: 20px;
+}
+
+.leevia-navbar {
+    background-color: #ffcf6b;
+    color: #001e3d;
+    border: none;
+    font-weight: 800;
+    font-size: 16px;
+    box-shadow: 0 3px 10px #555;
+}
+
+.leevia-navbar .navbar-nav > li > a {
+    color: #001e3d;
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.leevia-navbar .navbar-nav > .active > a {
+    color: #001e3d;
+    text-decoration: underline;
+    background-color: #ffcf6b;
+}
+
+.leevia-navbar .navbar-nav > li > a:focus,
+.leevia-navbar .navbar-nav > .active > a:focus {
+    color: #001e3d;
+    background-color: #ffcf6b;
+}
+
+.leevia-navbar .navbar-nav > li > a:hover,
+.leevia-navbar .navbar-nav > .active > a:hover,
+.leevia-navbar .navbar-nav > .open > a {
+    color: #fff;
+    background-color: #ffcf6b;
+}
+
+.leevia-navbar .navbar-toggle {
+    border: none;
+    margin-top: 15.5px;
+    margin-bottom: 15.5px;
+}
+
+.leevia-navbar .navbar-toggle:hover,
+.leevia-navbar .navbar-toggle:focus {
+    background-color: transparent;
+}
+
+.leevia-navbar .navbar-toggle .icon-bar {
+    background-color: #001e3d;
+    height: 3px;
+    width: 29px;
+}
+
+.leevia-navbar .navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 6px;
+}
+
+
+.leevia-navbar .navbar-collapse {
+    border: none;
+}
+
+.main-container {
+    margin-top: 44px;
+}
+
+.title {
+    font-size: 90px;
+    font-weight: 800;
+    line-height: 74px;
+    color: white;
+}
+
+.title-home {
+    margin-top: 120px;
+}
+
+.title-players {
+    margin-top: 40px;
+}
+
+.subtitle {
+    font-size: 24px;
+    color: white;
+}
+
+.subtitle-players {
+    margin-top: 160px;
+}
+
+.notes {
+    color: white;
+}
+
+a.conditions {
+    text-decoration: underline;
+    color: white;
+}
+
+.leevia-form-panel {
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.leevia-form-panel label {
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.leevia-form-panel .form-group {
+    margin-bottom: 9px;
+}
+
+.leevia-form-panel input {
+    border-radius: 0;
+}
+
+.small-notes {
+    font-size: 10px;
+    margin-bottom: -3px;
+}
+
+.small-notes a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+.privacy.form-group {
+    margin-top: 19px;    
+}
+
+.privacy label {
+    line-height: 26px;
+    font-size: 16px;
+}
+
+.privacy input[type=radio] {
+    width: 18px;
+    height: 18px;
+}
+
+.submit-button,
+.submit-button:hover {
+    background-color: #ffcf6b;
+    border: none;
+    border-radius: 0;
+    font-size: 18px;
+    font-weight: 800;
+    color: #001e3d;
+    padding: 12px;
+    margin-bottom: 8px;    
+}
+
+.social-footer {
+    margin-top: 110px;
+    margin-bottom: 60px;
+}
+
+.social-text {
+    font-size: 44px;
+    font-weight: 800;
+    color: #ffcf6b;
+}
+
+.social-icons a {
+    font-size: 52px;
+    color: #ffcf6b;
+    text-decoration: none;
+    padding: 0px 18px;
+}
+
+.players {
+    color: white;
+    margin-top: 22px;
+}
+
+.player {
+    margin-top: 19px;
+    height: 76px;
+    white-space: nowrap;
+}
+
+.player-index {
+    font-size: 40px;
+    width: 50px;
+    display: inline-block;
+    font-weight: 800;
+    margin-right: 20px;
+    height: 76px;
+    line-height: 76px;
+    vertical-align: top;
+}
+
+.avatar {
+    width: 76px;
+    border-radius: 50%;
+}
+
+.player-name {
+    margin-left: 20px;
+    font-size: 24px;
+    width: 200px;
+    display: inline-block;
+    height: 76px;
+    line-height: 76px;
+    vertical-align: top;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 56px;
+        line-height: 52px;
+    }
+
+    .title-home {
+        margin-top: 0px;
+    }
+
+    .title, .subtitle, .notes {
+        text-align: center;
+    }
+
+    .social-footer {
+        margin-top: 20px;
+    }
+
+    .social-text {
+        font-size: 30px;
+    }
+
+    .title-players {
+        font-size: 44px;
+        line-height: 44px;
+        margin-top: 20px;
+    }
+
+    .subtitle-players {
+        font-size: 20px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .players {
+        margin-bottom: 70px;
+    }
+}
+
+/* Riduce dimensioni per basse risoluzioni (e.g 360x640) su mobile */
+@media (max-width: 413px) {
+    /* Testi partecipanti */
+    .player {
+        margin-top: 19px;
+        height: 60px;
+    }
+
+    .player-index {
+        font-size: 30px;
+        margin-right: 15px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    .avatar {
+        width: 60px;
+    }
+
+    .player-name {
+        margin-left: 15px;
+        font-size: 20px;
+        height: 60px;
+        line-height: 60px;
+    }
+
+    /* Icone social */
+    .social-icons a {
+        font-size: 48px;
+        color: #ffcf6b;
+        text-decoration: none;
+        padding: 0px 16px;
+    }
+}

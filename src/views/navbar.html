@@ -1,0 +1,25 @@
+<nav ng-controller="navbarCtrl" class="navbar navbar-default navbar-static-top leevia-navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img class="leevia-logo" alt="Leevia" src="img/logo.png">
+            </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li ng-repeat="page in pages" ng-class="{active: location === ('/' + page.name)}">
+                    <a ng-href="#!{{page.name}}" ng-click="closeNavbar()">{{page.title}}</a>
+                </li>
+                <li>
+                    <a href="regulation.pdf" target="_blank">REGOLAMENTO</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
